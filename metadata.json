@@ -1,0 +1,7 @@
+{
+    "name": "HousingHelper",
+    "creator": "Clovenbob",
+    "description": "Helper Module for Clovenbob's Housing",
+    "entry": "index.js",
+    "version": "0.0.1"
+  }
