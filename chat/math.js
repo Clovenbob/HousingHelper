@@ -20,4 +20,14 @@ register('chat', (event) => {
       ChatLib.chat("§7* §fYour WLR: " + rounded);
       cancel(event)
     }
+    if (message.includes('/5,000')) {
+      message = message.replace(/[^\d//]/g, '');
+      position = message.search("/");
+      number1 = message.substr(0, position);
+      number2 = message.substr(position + 1);
+      result = (number1)/(number2) * 100;
+      rounded = Math.round(result * 100) / 100
+      ChatLib.chat("§8(§7" + rounded + "%§8)");
+      cancel(event)
+    }
   })
