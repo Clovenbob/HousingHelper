@@ -27,7 +27,7 @@ register('chat', (event) => {
       number2 = message.substr(position + 1);
       result = (number1)/(number2) * 100;
       rounded = Math.round(result * 100) / 100
-      ChatLib.chat("§8(§7" + rounded + "%§8)");
+      ChatLib.chat("§7* §8(§7" + rounded + "%§8)");
       cancel(event)
     }
   })
